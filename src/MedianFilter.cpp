@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 		const char* usage_description_formatted = 
 			"Usage: %s -f <filename> -k <ksize>\n"
 			"Note: <ksize> should be an odd number.\n"
-			"Currently it works for PNG, JPEG and BMP image formats\n";
+			"Currently it works with PNG, JPEG and BMP image formats\n";
 
 		printf(usage_description_formatted, argv[0]);
 		return EMPTY_ARGS_ERROR_CODE;
