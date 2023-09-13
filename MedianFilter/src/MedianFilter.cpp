@@ -6,7 +6,7 @@
 #include <sstream>
 #include <string>
 #include <cmath>
-#include "image_proc/Image.h"
+#include "filter/Image.h"
 #include "filter/medianf.h"
 #include "utils/ArgumentParser.h"
 

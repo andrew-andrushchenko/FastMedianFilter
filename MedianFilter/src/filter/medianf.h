@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../image_proc/Image.h"
+#include "Image.h"
 
 class Histogram_C3
 {

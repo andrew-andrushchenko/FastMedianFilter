@@ -12,8 +12,8 @@
 #include <iostream>
 #include <string.h>
 
-#include "../vendor/stb_image/stb_image.h"
-#include "../vendor/stb_image/stb_image_write.h"
+#include "stb_image.h"
+#include "stb_image_write.h"
 
 Image::Image() : m_Width(0), m_Height(0), m_Channels(0), m_Size(0), m_Data(nullptr)
 {

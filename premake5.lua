@@ -9,6 +9,7 @@ workspace "FastMedianFilter"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 project "MedianFilter"
+   location "MedianFilter"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++17"
@@ -18,8 +19,13 @@ project "MedianFilter"
 
    files 
    { 
-       "src/**.h",
-       "src/**.cpp" 
+       "%{prj.name}/src/**.h",
+       "%{prj.name}/src/**.cpp" 
+   }
+
+   includedirs
+   {
+      "%{prj.name}/src/vendor/stb_image"
    }
 
    filter "system:windows"
